@@ -3,6 +3,7 @@ import React from 'react'
 import '../styles/footer.css'
 
 const Footer = () => {
+
     return (
         <div className="footer container-fluid row col-12">
             <div className="footer-left-side col-lg-4 col-md-12 col-sm-12 pt-4">
