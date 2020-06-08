@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 const NewsSearch = (props) => {
@@ -10,7 +10,7 @@ const NewsSearch = (props) => {
 
 
 
-    const filtrar = () => {
+    const filter = () => {
         let filtered = articles.filter(article => article.title.toLocaleLowerCase().indexOf(search.toLocaleLowerCase()) !== -1)
         return (
             filtered.map(item => (
@@ -35,7 +35,7 @@ const NewsSearch = (props) => {
                 <hr/>
                 <input
                 value={search}
-                onKeyUp={() => filtrar()}
+                onKeyUp={() => filter()}
                 onChange={(e) => setSearch(e.target.value)}
                 className="col-8 form-control m-auto"
                 placeholder="Buscar noticia"
@@ -53,7 +53,7 @@ const NewsSearch = (props) => {
                                 </div>
                             </div>
                         </Link>
-                        )) : filtrar()
+                        )) : filter()
                 }
 
                 </div>

@@ -16,6 +16,7 @@ const GET_ALL_ARTICLES = 'GET_ALL_ARTICLES'
 const GET_SIX_ARTICLES_SUCCESS = 'GET_SIX_ARTICLES_SUCCESS'
 const GET_FIVE_ARTICLES_SUCCESS = 'GET_FIVE_ARTICLES_SUCCESS'
 
+
 // reducers
 
 export default function articlesReducer(state = articles, action){
