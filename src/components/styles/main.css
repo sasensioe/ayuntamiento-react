@@ -74,8 +74,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
-    
+
+.relevant-link:hover{
+    transform: scale(1.02);
+    transition: 0.6s;
+}
 
 
                                           /** MEDIUM DEVICE (992px) **/
