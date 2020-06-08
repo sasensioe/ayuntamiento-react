@@ -5,7 +5,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getYouth } from '../../../redux/areasDucks'
 
 
-
 const Juventud = () => {
 
     const dispatch = useDispatch()
