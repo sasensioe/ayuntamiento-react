@@ -1,0 +1,141 @@
+
+
+                                                /** GENERAL **/
+
+
+        /** NEWS GRID **/
+
+.latest-news-grid{
+    margin-top: 5em;
+}
+          
+.latest-news-grid-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 10em 10em;
+    grid-gap: 1em;
+    width: 100%;
+    padding: 1em;
+}
+          
+.latest-news-grid-content article{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.latest-news-grid-content article:hover{
+    transform: scale(1.02);
+    transition: 0.6s;
+}
+          
+.latest-news-grid-content article img{
+    height: 100%;
+}
+          
+.latest-news-grid-content article:first-child {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.latest-news-grid-content article:first-child .deg-article {
+    font-size: 20px;
+}
+
+.deg-article{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    color: white;
+    font-size: 12px;
+}
+        
+
+        /** NEWS SEARCH **/
+
+.card-news-search{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    color: black;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.card-news-search:hover{
+    color: black;
+    text-decoration: none;
+    transform: scale(1.01);
+    transition: 0.6s;
+}
+
+            
+
+
+
+                                            /** MEDIUM DEVICE (992px) **/
+
+
+@media only screen and (max-width: 992px){
+
+
+        /** NEWS GRID **/
+
+.latest-news-grid-content {
+    margin: auto;
+    text-align: center;
+    justify-items: center;
+    display: block;
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.latest-news-grid-content article{
+    width: 45%;
+    margin-bottom: 2em;
+    margin: 1em;
+    font-size: 0.8em;
+}
+
+.latest-news-grid-content article img{
+    height: 100%;
+}
+   
+
+#a1{
+    width: 100%;
+    font-size: 1em;
+}
+
+.news {
+    display: block;
+}
+
+}
+
+        
+                                            /** SMALL DEVICE (768px) **/
+        
+        
+@media only screen and (max-width: 768px){
+        
+            
+        /** NEWS GRID **/
+        
+.latest-news-grid{
+    display: none;
+}   
+
+
+        /** NEWS SEARCH **/
+        
+.news-search-title{
+    margin-top: 3em;
+}
+}
+  

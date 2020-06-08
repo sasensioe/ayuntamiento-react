@@ -1,0 +1,134 @@
+                                            /** GENERAL **/
+
+
+        /** NAVBAR **/
+
+
+.navigation-bar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: #0b4f1d;
+    box-shadow:0px 4px 20px -2px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+
+.nav-menu-links{
+    list-style: none;
+    color: white;
+}
+  
+.nav-menu-link{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    float: left;
+    margin: 1em;
+}
+  
+.nav-menu-link:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+  
+  
+        /** LATERAL MENU **/
+
+#areas-navbar-btn{
+    display: none;
+}
+
+.areas-navbar-menu{
+    display: none;
+}
+
+                                        /** SMALL DEVICES (768px) **/
+
+@media only screen and (max-width: 768px){
+
+
+        /** LATERAL MENU **/
+
+
+#dropdownMenuButton{
+    display: none;
+}
+    
+#areas-navbar-btn{
+    display: block;
+    position: absolute;
+    right: 30px;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#nav-menu-container{
+    position: absolute;
+    top: 0;
+    right: 0%;
+    width: 75%;
+    height: 100vh;
+    background-color: white;
+    box-shadow:0px 4px 20px -2px black;
+    transition: 0.7s;
+}
+    
+#nav-menu-container-open{
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 75%;
+    height: 100vh;
+    background-color: white;
+    box-shadow:0px 4px 20px -2px black;
+    transition: 0.7s;
+}
+
+.nav-menu-links{
+    margin-top: 4em;
+    display: flex;
+    height: 70%;
+    flex-direction: column;
+}
+    
+.nav-menu-link{
+    font-size: 2em;
+    margin: auto;
+    color: #0b4f1d;
+}
+    
+.nav-menu-link:hover{
+    color: #0b4f1d;
+}
+
+.areas-navbar-menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#areas-navbar-menu-title{
+    font-size: 2em;
+    color: #0b4f1d;
+}
+
+.area-item{
+    margin: auto;
+    text-decoration: none;
+    color: #0b4f1d;
+}
+    
+.area-item:hover{
+    text-decoration: none;
+    color: #0b4f1d;
+}
+
+
+}

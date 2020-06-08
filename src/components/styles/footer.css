@@ -1,0 +1,39 @@
+
+                                            /** GENERAL **/
+
+
+.footer{
+  margin:0;
+  margin-top: 5em;
+  background-color: black;
+  color: white;
+}
+  
+.footer-middle img{
+  width: 100%;
+}
+
+
+                                    /** MEDIUM DEVICES (992px) **/
+
+
+@media only screen and (max-width: 992px){
+  
+  
+.footer-middle{
+  display: none;
+}
+
+}
+
+
+                                    /** SMALL DEVICES (768px) **/
+  
+@media only screen and (max-width: 768px){
+
+.footer-middle{
+  display: none;
+}
+  
+}
+  

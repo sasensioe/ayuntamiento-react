@@ -1,0 +1,131 @@
+
+
+                                            /** GENERAL **/
+
+
+        /** SLIDER **/
+
+#carouselExampleSlidesOnly{
+    overflow: hidden;
+}
+
+
+        /** AREAS **/
+
+.areas-container{
+    margin-top: 60px;
+}
+
+.area{
+    height: 120px;
+}
+
+.card-area{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 20px;
+    height: 80px;
+    margin: 1em;
+    background-color: #0b4f1d;
+}
+
+.card-area:hover{
+    text-decoration: none;
+    color: white;
+    transform: scale(1.02);
+    transition: 0.6s;
+}
+
+
+        /** CARD-NEWS **/
+
+.card{
+    text-decoration: none;
+    color: black;
+}
+
+.card-news:hover{
+    transform: scale(1.02);
+    transition: 0.6s;
+}
+
+.card-img-container{
+    height: 200px;
+}
+
+@supports(object-fit: cover){
+    .card-img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+
+        /** RELEVANT LINKS **/
+
+
+.relevant-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+
+
+                                          /** MEDIUM DEVICE (992px) **/
+
+
+@media only screen and (max-width: 992px){
+
+
+        /** SLIDER **/
+
+    #carouselExampleSlidesOnly{
+        width: 100vw; 
+        overflow: hidden;
+    }
+}
+
+
+                                          /** SMALL DEVICE (768px) **/
+
+
+@media only screen and (max-width: 768px){
+
+    
+        /** SLIDER **/
+
+#carouselExampleSlidesOnly{
+    margin-top: 60px;
+    width: 100vw;
+    overflow: hidden;
+}
+
+
+        /** AREAS **/
+
+.area{
+    margin-bottom: 0.8em;
+    height: 7em;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
+
+        /** RELEVANT LINKS **/
+
+.relevant-links{
+    display: none;
+}
+
+
+}
+
+
