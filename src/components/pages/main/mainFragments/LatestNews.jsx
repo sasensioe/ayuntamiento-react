@@ -7,7 +7,7 @@ import { getSixLatestArticles } from '../../../redux/articlesDucks'
 const LatestNews = () => {
 
     const dispatch = useDispatch()
-    const articles = useSelector(store => store.articles.array)
+    const articles = useSelector(store => store.articles.arrayMainPage)
 
 
     React.useEffect(() => {

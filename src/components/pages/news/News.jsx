@@ -1,5 +1,7 @@
 import React from 'react'
+
 import '../../styles/news.css'
+
 import NewsSearch from './newsFragments/NewsSearch'
 import NewsGrid from './newsFragments/NewsGrid'
 
@@ -9,11 +11,13 @@ import { getFiveLatestArticles } from '../../redux/articlesDucks'
 const News = () => {
 
   const dispatch = useDispatch()
-  const articles = useSelector(store => store.articles.array)
+  const articles = useSelector(store => store.articles.arrayDefault)
 
   React.useEffect(() => {
+
     dispatch(getFiveLatestArticles())
     window.scrollTo(0, 0)
+
   }, [dispatch])
 
 
