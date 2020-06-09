@@ -82,8 +82,8 @@
 }
 
 .details-img{
-    height: 250px;
-    margin: 1em;
+    height: 230px;
+    text-align: center;
 }
 
 @supports(object-fit: cover){
@@ -94,7 +94,12 @@
     }
 }
 
-
+@media only screen and (max-width: 992px){
+    .details-img{
+        height: 150px;
+        background-color: brown;
+    }
+}
 
 
 

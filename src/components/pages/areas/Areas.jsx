@@ -5,19 +5,28 @@ import { Switch, Route } from 'react-router-dom'
 import '../../styles/areas.css'
 
 import AreasMenu from './areasFragments/AreasMenu'
+
 import Sport from './areasFragments/sport/Sport'
 import Job from './areasFragments/job/Job'
 import Youth from './areasFragments/youth/Youth'
 import Culture from './areasFragments/culture/Culture'
+
+// Culture
 
 import NavalvillarLibrary from './areasFragments/culture/cultureElements/NavalvillarLibrary'
 import ObandoLibrary from './areasFragments/culture/cultureElements/ObandoLibrary'
 import PopularUniversity from './areasFragments/culture/cultureElements/PopularUniversity'
 import ColmenaCultural from './areasFragments/culture/cultureElements/ColmenaCultural'
 
+// Job
+
 import EmploymentExchange from './areasFragments/job/jobElements/EmploymentExchange'
 
+// Sport
+
 import SportsCenter from './areasFragments/sport/sportElements/SportsCenter'
+
+// Youth
 
 import YoungCenter from './areasFragments/youth/youthElements/YoungCenter'
 import EuropeanYouthCard from './areasFragments/youth/youthElements/EuropeanYouthCard'
