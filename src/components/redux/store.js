@@ -3,12 +3,10 @@ import thunk from 'redux-thunk'
 
 
 import articlesReducer from './articlesDucks'
-import areasReducer from './areasDucks'
 
 
 const rootReducer = combineReducers({
     articles: articlesReducer,
-    areas: areasReducer
 })
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

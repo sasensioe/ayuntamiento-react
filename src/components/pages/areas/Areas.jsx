@@ -1,27 +1,34 @@
 import React from 'react'
 
-import { Switch, Route, useLocation } from 'react-router-dom'
-
-import AreasMenu from './areasFragments/AreasMenu'
-import Sport from './areasFragments/Sport'
-import Job from './areasFragments/Job'
-import Youth from './areasFragments/Youth'
-import Culture from '../areas/areasFragments/Culture'
-import ElementDetail from './areasFragments/ElementDetail'
+import { Switch, Route } from 'react-router-dom'
 
 import '../../styles/areas.css'
 
+import AreasMenu from './areasFragments/AreasMenu'
+import Sport from './areasFragments/sport/Sport'
+import Job from './areasFragments/job/Job'
+import Youth from './areasFragments/youth/Youth'
+import Culture from './areasFragments/culture/Culture'
+
+import NavalvillarLibrary from './areasFragments/culture/cultureElements/NavalvillarLibrary'
+import ObandoLibrary from './areasFragments/culture/cultureElements/ObandoLibrary'
+import PopularUniversity from './areasFragments/culture/cultureElements/PopularUniversity'
+import ColmenaCultural from './areasFragments/culture/cultureElements/ColmenaCultural'
+
+import EmploymentExchange from './areasFragments/job/jobElements/EmploymentExchange'
+
+import SportsCenter from './areasFragments/sport/sportElements/SportsCenter'
+
+import YoungCenter from './areasFragments/youth/youthElements/YoungCenter'
+import EuropeanYouthCard from './areasFragments/youth/youthElements/EuropeanYouthCard'
+
 const Areas = () => {
-
-
-    let location = useLocation()
-
 
     React.useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
 
-
+    
     return (
         <div id="areas" className="container-fluid row p-0">
             
@@ -29,22 +36,22 @@ const Areas = () => {
 
             <Switch>
 
-                <Route path="/areas/deporte" exact>
-                    <Sport />
-                </Route>
-                <Route path="/areas/empleo" exact>
-                    <Job />
-                </Route>
-                <Route path="/areas/juventud" exact>
-                    <Youth />
-                </Route>
-                <Route path="/areas/cultura" exact>
-                    <Culture />
-                </Route>
-                <Route path={location.pathname}>
-                    <ElementDetail />
-                </Route>
-                
+                <Route path="/areas/deporte" exact component={Sport}/>
+                <Route path="/areas/empleo" exact component={Job}/>
+                <Route path="/areas/juventud" exact component={Youth}/>
+                <Route path="/areas/cultura" exact component={Culture}/>
+
+                <Route path="/areas/cultura/biblioteca-navalvillar" component={NavalvillarLibrary}/>
+                <Route path="/areas/cultura/agencia-lectura-obando" component={ObandoLibrary}/>
+                <Route path="/areas/cultura/universidad-popular" component={PopularUniversity}/>
+                <Route path="/areas/cultura/colmena-cultural" component={ColmenaCultural}/>
+
+                <Route path="/areas/empleo/bolsa-empleo" component={EmploymentExchange}/>
+
+                <Route path="/areas/deporte/polideportivo-la-dehesa" component={SportsCenter}/>
+
+                <Route path="/areas/juventud/centro-joven" component={YoungCenter}/>
+                <Route path="/areas/juventud/carnet-joven-europeo" component={EuropeanYouthCard}/>
             </Switch>
         </div>
     )

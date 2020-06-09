@@ -1,8 +1,14 @@
+
+
+                                                /** GENERAL **/
+
+
+            /** AREAS CONTENT **/                             
+
 #areas{
     margin: 0;
     margin-top: 60px;
 }
-
 
 .areas-menu{
     height: 100vh;
@@ -32,7 +38,6 @@
     margin-bottom: 1em;
     color: black;
 }
-
 
 .areas-menu-link{
     color: black;
@@ -69,10 +74,33 @@
     }
 }
 
+        /** ELEMENT DETAIL **/
+
+.details-container{
+    padding: 2em;
+    text-align: justify;
+}
+
+.details-img{
+    height: 250px;
+    margin: 1em;
+}
+
+@supports(object-fit: cover){
+    .details-img img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
 
 
 
 
+
+
+
+                                        /** SMALL DEVICES (768px) **/
 
 @media only screen and (max-width: 768px){
     .areas-menu{
@@ -82,4 +110,9 @@
     .card-title{
         font-size: 1em;
     }
+
+
+
+
+
 }
