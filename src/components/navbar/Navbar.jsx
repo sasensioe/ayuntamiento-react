@@ -32,7 +32,7 @@ const Navbar = () => {
                     </Link>
 
                     <Link className="nav-menu-link" to="" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        AREAS
+                        ÁREAS
                     </Link>
 
                     <DropdownMenu />

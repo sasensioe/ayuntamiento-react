@@ -1,24 +1,24 @@
 import React from 'react'
-import { Link, useLocation } from 'react-router-dom'
+
+import { Link } from 'react-router-dom'
 
 import { useDispatch, useSelector } from 'react-redux'
 import { getCultura } from '../../../redux/areasDucks'
 
 
-
-const Cultura = () => {
+const Culture = () => {
 
 
     const dispatch = useDispatch()
-    const culture = useSelector(store => store.areas.array)
 
+    const culture = useSelector(store => store.areas.array)
     const loading = useSelector(store => store.areas.loading)
+
 
     React.useEffect(() => {
         dispatch(getCultura())
     }, [dispatch])
 
-    console.log(loading)
 
     return loading !== true ? (
         <section className="area-content container-fluid col-lg-9 col-md-9 col-sm-12">
@@ -45,4 +45,4 @@ const Cultura = () => {
     ) : null
 }
 
-export default Cultura
+export default Culture

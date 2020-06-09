@@ -1,5 +1,7 @@
 import React from 'react'
+
 import { useLocation } from 'react-router-dom'
+
 import { useDispatch, useSelector } from 'react-redux'
 import { getSingleElement } from '../../../redux/areasDucks'
 
@@ -14,7 +16,7 @@ const ElementDetail = () => {
     const element = useSelector(store => store.areas.element)
     const loading = useSelector(store => store.areas.loading)
 
-    let location = useLocation().pathname.split('/')
+    const location = useLocation().pathname.split('/')
 
 React.useEffect(() => {
 
@@ -23,7 +25,7 @@ React.useEffect(() => {
 
     dispatch(getSingleElement(area, id))
 
-}, [area, setArea, id, setId])
+}, [area, setArea, id, setId, dispatch])
 
     return loading !== true ? (
         <section className="area-detail-content container-fluid col-lg-9 col-md-9 col-sm-12">   
