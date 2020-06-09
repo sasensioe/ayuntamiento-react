@@ -22,3 +22,22 @@
     outline-width: 0 !important;
     box-shadow: none;
 }
+
+@supports(object-fit: cover){
+    #contact-img img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+                                        /** SMALL DEVICES **/
+
+@media only screen and (max-width: 768px){
+
+    #contact-img{
+        display: none;
+    }
+
+
+}

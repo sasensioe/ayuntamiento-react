@@ -7,7 +7,7 @@ const Contact = () => {
         <section className="contact-content container col-10">
             <h3 className="mb-4">CONTACTO</h3>
             <div className="contact-body row p-0">
-                <form className="col-6 p-0">
+                <form className="col-lg-6 col-md-6 col-sm-12 p-0">
                     <h5 className="mt-3">¿Tienes algo que contarnos?</h5>
 
                     <label className="col-10 text-left mt-2" htmlFor="name">Nombre</label><br/>
@@ -26,11 +26,11 @@ const Contact = () => {
                     /><br/>
 
                     <label className="col-10 text-left mt-2" htmlFor="city">Su mensaje</label><br/>
-                    <input className="contact-input col-10 text-left" type="textarea"
+                    <input className="contact-input col-10 text-left mb-4" type="textarea"
                     id="message"
                     />
                 </form>
-                <div className="col-6 p-0">
+                <div id="contact-img" className="col-lg-6 col-md-6 col-sm-12 p-0">
                     <img className="w-100" src="./img/grullas.jpg" alt=""/>
                 </div>
             </div>
