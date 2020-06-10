@@ -10,7 +10,6 @@ const YoungCenter = () => {
                     <img src="https://firebasestorage.googleapis.com/v0/b/ayuntamiento-2a2a8.appspot.com/o/areas%2Fjuventud%2Fcentro-joven.jpg?alt=media&token=3cb5d82d-7674-494d-8a96-f978828284fb" alt=""/>
                 </div>
                 <p className="text-align-justify">El Espacio para la Creación y la Ciudadanía Joven de Navalvillar de Pela, reabrió sus puertas tras una remodelación el 14 de Noviembre de 2015 para convertirse en el punto de encuentro y de ocio de los jóvenes peleños.</p>
-                
             </div>
         </section>
     )

@@ -8,7 +8,6 @@ import Main from './components/pages/main/Main';
 import Article from './components/pages/article/Article';
 import Footer from './components/footer/Footer';
 import Areas from './components/pages/areas/Areas';
-import Login from './components/pages/admin/Login';
 import Admin from './components/pages/admin/Admin';
 
 
@@ -24,9 +23,6 @@ function App() {
 
         <Route path="/admin">
           <Admin />
-        </Route>
-        <Route path="/login">
-          <Login />
         </Route>
         <Route path="/contact">
           <Contact />
