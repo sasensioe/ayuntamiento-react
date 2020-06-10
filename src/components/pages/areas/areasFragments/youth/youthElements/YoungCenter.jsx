@@ -1,15 +1,17 @@
 import React from 'react'
 
+import '../../../../../styles/areas/youth/youngCenter.css'
+
 const YoungCenter = () => {
     return (
         <section className="area-detail-content container-fluid col-lg-9 col-md-9 col-sm-12">   
             <h1 className="area-detail-content-title mt-3">Centro Joven</h1>
             <hr/>
             <div className="details-container">
-                <div className="details-img col-lg-6 col-md-6 col-sm-12 float-right">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/ayuntamiento-2a2a8.appspot.com/o/areas%2Fdeporte%2Fcampo-futbol.jpg?alt=media&token=073e0255-84de-4a79-af29-bdb80fa2fc1e" alt=""/>
+                <div className="details-img col-lg-6 col-md-6 col-sm-12 bg-dark">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/ayuntamiento-2a2a8.appspot.com/o/areas%2Fjuventud%2Fcentro-joven.jpg?alt=media&token=3cb5d82d-7674-494d-8a96-f978828284fb" alt=""/>
                 </div>
-                <p className="text-align-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lacus, pellentesque non diam quis, sagittis faucibus tellus. Aenean a sem cursus, varius eros in, lobortis orci. Duis suscipit sed metus at malesuada. Curabitur sit amet nunc lobortis, fermentum quam at, condimentum ligula. Donec dignissim nisi vel dui sagittis molestie. Nullam maximus arcu sed neque porta, nec ullamcorper turpis placerat. Cras elementum non justo at dapibus. Maecenas tincidunt arcu at nibh porttitor, sed finibus diam blandit. Aliquam ante magna, blandit quis ornare quis, consectetur sed ex. Vestibulum eu tincidunt est.</p>
+                <p className="text-align-justify">El Espacio para la Creación y la Ciudadanía Joven de Navalvillar de Pela, reabrió sus puertas tras una remodelación el 14 de Noviembre de 2015 para convertirse en el punto de encuentro y de ocio de los jóvenes peleños.</p>
                 
             </div>
         </section>

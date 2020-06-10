@@ -16,7 +16,6 @@ import Culture from './areasFragments/culture/Culture'
 import NavalvillarLibrary from './areasFragments/culture/cultureElements/NavalvillarLibrary'
 import ObandoLibrary from './areasFragments/culture/cultureElements/ObandoLibrary'
 import PopularUniversity from './areasFragments/culture/cultureElements/PopularUniversity'
-import ColmenaCultural from './areasFragments/culture/cultureElements/ColmenaCultural'
 
 // Job
 
@@ -53,7 +52,6 @@ const Areas = () => {
                 <Route path="/areas/cultura/biblioteca-navalvillar" component={NavalvillarLibrary}/>
                 <Route path="/areas/cultura/agencia-lectura-obando" component={ObandoLibrary}/>
                 <Route path="/areas/cultura/universidad-popular" component={PopularUniversity}/>
-                <Route path="/areas/cultura/colmena-cultural" component={ColmenaCultural}/>
 
                 <Route path="/areas/empleo/bolsa-empleo" component={EmploymentExchange}/>
 

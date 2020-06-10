@@ -7,10 +7,16 @@ const EuropeanYouthCard = () => {
             <hr/>
             <div className="details-container">
                 <div className="details-img col-lg-6 col-md-6 col-sm-12 float-right">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/ayuntamiento-2a2a8.appspot.com/o/areas%2Fdeporte%2Fcampo-futbol.jpg?alt=media&token=073e0255-84de-4a79-af29-bdb80fa2fc1e" alt=""/>
+                    <img src="https://firebasestorage.googleapis.com/v0/b/ayuntamiento-2a2a8.appspot.com/o/areas%2Fjuventud%2Fcarnet-joven.jpg?alt=media&token=497ce077-a4e6-4092-8ed3-4a9f1e415bb2" alt=""/>
                 </div>
-                <p className="text-align-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lacus, pellentesque non diam quis, sagittis faucibus tellus. Aenean a sem cursus, varius eros in, lobortis orci. Duis suscipit sed metus at malesuada. Curabitur sit amet nunc lobortis, fermentum quam at, condimentum ligula. Donec dignissim nisi vel dui sagittis molestie. Nullam maximus arcu sed neque porta, nec ullamcorper turpis placerat. Cras elementum non justo at dapibus. Maecenas tincidunt arcu at nibh porttitor, sed finibus diam blandit. Aliquam ante magna, blandit quis ornare quis, consectetur sed ex. Vestibulum eu tincidunt est.</p>
-                
+                <p className="text-align-justify">El Carné Joven Europeo, te ofrece la oportunidad de poder disfrutar de descuentos, ofertas especiales y muchas ventajas en toda Europa.</p>
+                <p>Si te gusta viajar: encontrarás descuentos en hoteles, albergues, alojamientos rurales, agencias de viajes, alquiler de coches, transportes, etc.</p>
+                <p>Si prefieres quedar con tu gente para salir, podéis disfrutar de precios especiales en cines, centros de ocio, restaurantes y cafeterías</p>
+                <p>Si necesitas hacer un regalo, conseguir tu música favorita, adquirir materiales para llevar a cabo alguno de tus hobbies, cambiar los muebles de tu casa, comprar libros, ropa, calzado, etc., con el Carné Joven Europeo te resultará un poco más económico</p>
+                <p>Si eliges darte un capricho en un centro de belleza o en una peluquería, cambiar tus gafas, ponerte lentillas… puedes beneficiarte de diferentes descuentos</p>
+                <p>Si eliges darte un capricho en un centro de belleza o en una peluquería, cambiar tus gafas, ponerte lentillas… puedes beneficiarte de diferentes descuentos</p>
+
+            
             </div>
         </section>
     )

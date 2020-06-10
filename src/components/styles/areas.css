@@ -52,7 +52,7 @@
     margin-top: 2em;
     text-align: center;
 }
-
+ 
 .cards{
     padding: auto;
     justify-content: center;
@@ -60,6 +60,12 @@
 
 .card{
     margin: 1em;
+    border: none;
+}
+
+.card:hover{
+    text-decoration: none;
+    color: black;
 }
 
 .card-img-container{
@@ -74,30 +80,13 @@
     }
 }
 
-        /** ELEMENT DETAIL **/
 
-.details-container{
-    padding: 2em;
-    text-align: justify;
-}
 
-.details-img{
-    height: 230px;
-    text-align: center;
-}
-
-@supports(object-fit: cover){
-    .details-img img{
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
-}
+                                        /** MEDIUM DEVICES (992px) **/
 
 @media only screen and (max-width: 992px){
     .details-img{
         height: 150px;
-        background-color: brown;
     }
 }
 

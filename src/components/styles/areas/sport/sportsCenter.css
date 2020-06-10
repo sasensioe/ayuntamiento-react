@@ -1,0 +1,21 @@
+
+                                            /** GENERAL **/
+
+
+.details-container{
+    padding: 2em;
+    text-align: justify;
+}
+
+.details-img{
+    height: 230px;
+    text-align: center;
+}
+
+@supports(object-fit: cover){
+    .details-img img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
