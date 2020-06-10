@@ -27,7 +27,7 @@ const LatestNews = () => {
                         {
                             articles.map((item) => (
                             
-                            <Link to={`/articles/${item.id}`} key={item.id} className="card-news text-decoration-none col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                            <Link to={`/articles/${item.id}`} key={item.id} className="card-news text-decoration-none col-lg-4 col-md-6 col-sm-12 col-xs-12">
                                 <div className="card mb-4 box-shadow">
                                     <div className="card-img-container">
                                         <img className="card-img" src={item.mainPic} alt=""/>

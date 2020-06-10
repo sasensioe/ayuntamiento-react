@@ -9,7 +9,7 @@ const Sport = () => {
         <section className="area-content container-fluid col-lg-9 col-md-9 col-sm-12">
             <h1 className="area-content-title">DEPORTE</h1>
             <hr/>
-            <div className="cards row">
+            <div className="cards row p-3">
 
                 <Link to="/areas/deporte/polideportivo-la-dehesa" className="p-0 card col-lg-5 col-md-5 col-sm-12">
                     <div className="card-img">

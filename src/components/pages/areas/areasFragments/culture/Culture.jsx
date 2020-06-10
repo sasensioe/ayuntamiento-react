@@ -9,7 +9,7 @@ const Culture = () => {
         <section className="area-content container-fluid col-lg-9 col-md-9 col-sm-12">
             <h1 className="area-content-title">CULTURA</h1>
             <hr/>
-            <div className="cards row">
+            <div className="cards row p-3">
                     <Link to="/areas/cultura/biblioteca-navalvillar" className="p-0 card col-lg-5 col-md-5 col-sm-12">
                         <div className="card-img">
                             <div className="card-img-container">
@@ -40,7 +40,7 @@ const Culture = () => {
                             </div>
                         </div>
                     </Link>
-                    <a href="https://www.lacolmenacultural.com/municipios.php?id_municipio=060910001&tipo_interes=0" className="p-0 card col-lg-5 col-md-5 col-sm-12">
+                    <a href="https://www.lacolmenacultural.com/municipios.php?id_municipio=060910001&tipo_interes=0" target="_blank" rel="noopener noreferrer" className="p-0 card col-lg-5 col-md-5 col-sm-12">
                         <div className="card-img">
                             <div className="card-img-container">
                                 <img className="card-img" src="https://firebasestorage.googleapis.com/v0/b/ayuntamiento-2a2a8.appspot.com/o/areas%2Fcultura%2Fla_colmena.jpg?alt=media&token=d070348b-33ff-411c-b59f-f62b62181bae" alt=""/>

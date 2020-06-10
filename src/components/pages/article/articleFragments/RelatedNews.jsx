@@ -6,7 +6,7 @@ const RelatedNews = () => {
         <aside className="related-news container article-related-news col-lg-3 col-md-12 col-sm-12">
             <h2 className="text-center">RELACIONADO</h2>
             <div className="row">
-                <div className="card col-md-4 col-lg-11 mb-4 box-shadow">
+                <div className="card col-md-4 col-lg-11 p-0 mb-4 box-shadow">
                     <img className="card-img-top" src="../img/empleo.jpg" alt=""/>
                     <div className="card-body">
                         <p className="card-text">Certamen regional de cata de aceite de oliva Virgen Extra "SAN ANTÓN 2020"</p>
@@ -15,7 +15,7 @@ const RelatedNews = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card col-md-4 col-lg-11 mb-4 box-shadow">
+                <div className="card col-md-4 col-lg-11 p-0 mb-4 box-shadow">
                     <img className="card-img-top" src="../img/empleo.jpg" alt=""/>
                     <div className="card-body">
                         <p className="card-text">Certamen regional de cata de aceite de oliva Virgen Extra "SAN ANTÓN 2020"</p>
@@ -24,7 +24,7 @@ const RelatedNews = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card col-md-4 col-lg-11 mb-4 box-shadow">
+                <div className="card col-md-4 col-lg-11 p-0 mb-4 box-shadow">
                     <img className="card-img-top" src="../img/empleo.jpg" alt=""/>
                     <div className="card-body">
                         <p className="card-text">Certamen regional de cata de aceite de oliva Virgen Extra "SAN ANTÓN 2020"</p>
