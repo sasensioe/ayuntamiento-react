@@ -18,15 +18,14 @@ const LatestNews = () => {
 
     return (
         <Fragment>
-        <section className="latest-news container">
-            <h1 className="latest-news-title text-center">ÚLTIMAS NOTICIAS</h1>
-            <hr/>
-            <div className="latest-news-content album py-5">
-                <div className="container">
+            <section className="latest-news container mt-5">
+                <h1 className="latest-news-title text-center">ÚLTIMAS NOTICIAS</h1>
+                <hr/>
+                <div className="latest-news-content album py-5">
                     <div className="row">
                         {
                             articles.map((item) => (
-                            
+                    
                             <Link to={`/articles/${item.id}`} key={item.id} className="card-news text-decoration-none col-lg-4 col-md-6 col-sm-12 col-xs-12">
                                 <div className="card mb-4 box-shadow">
                                     <div className="card-img-container">
@@ -45,8 +44,7 @@ const LatestNews = () => {
                         }
                     </div>
                 </div>
-            </div>
-        </section>            
+            </section>            
         </Fragment>
     )
 }

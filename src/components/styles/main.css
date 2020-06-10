@@ -13,10 +13,6 @@
 
         /** AREAS **/
 
-.areas-container{
-    margin-top: 60px;
-}
-
 .area{
     height: 120px;
 }
@@ -118,7 +114,6 @@
 
 .area{
     margin-bottom: 0.8em;
-    height: 7em;
     object-fit: cover;
     object-position: center;
     overflow: hidden;

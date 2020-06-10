@@ -17,7 +17,7 @@
     width: 100%;
     padding: 1em;
 }
-          
+
 .latest-news-grid-content article{
     position: relative;
     overflow: hidden;
@@ -59,8 +59,7 @@
 .card-news-search{
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    border: 1px solid gainsboro;
-    border-radius: 5px;
+    box-shadow:0px 4px 10px -2px black;
     color: black;
     margin: auto;
     margin-bottom: 10px;
