@@ -30,6 +30,7 @@ const SelectArticle = (props) => {
 
     return (
         <div className="container">
+            <h2>¿Qué desea hacer?</h2>
             <ul className="list-group">
 
                 {

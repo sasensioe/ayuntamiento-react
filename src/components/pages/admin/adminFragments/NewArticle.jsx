@@ -13,34 +13,31 @@ const NewArticle = (props) => {
     const [p2, setP2] = React.useState('')
     const [p3, setP3] = React.useState('')
     const [p4, setP4] = React.useState('')
-    const [mainPic, setMainPic] = React.useState('')
+    const [img, setImg] = React.useState('')
 
-    const procesar = (e) => {
-        e.preventDefault()
-        addArticle()
-    }
 
     const selectImage = (e) => {
-        
         const image = e.target.files[0]
-
         if(image===undefined){
             console.log('sin imagen')
             return
         }
-
-        const upload = async() => {
-            const refImg = storage.ref().child('articles').child(id).child(id)
-            await refImg.put(image)
-            const Url = await refImg.getDownloadURL()
-            setMainPic(Url)
-        }
-        upload()
-
+        setImg(image)
     }
 
+    const procesar = (e) => {
+        e.preventDefault()
+        upload()
+    }
 
-    const addArticle = (async() => {
+    const upload = async() => {
+        const refImg = storage.ref().child('articles').child(id).child(id)
+        await refImg.put(img)
+        const Url = await refImg.getDownloadURL()
+        addArticle(Url)
+    }
+
+    const addArticle = (async(url) => {
         try {
             const newArticle = {
                 title: title,
@@ -50,21 +47,14 @@ const NewArticle = (props) => {
                 p3: p3,
                 p4: p4,
                 date: Date.now(),
-                mainPic: mainPic
+                mainPic: url
             }
             await db.collection('articles').doc(id).set(newArticle)
-
             props.history.push('/admin')
-
         } catch (error) {
             console.log(error)
         }
     })
-
-
-
-
-
 
 
     return (

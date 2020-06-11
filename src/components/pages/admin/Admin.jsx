@@ -16,10 +16,17 @@ import { auth } from '../../../firebase'
 const Admin = () => {
 
     return (
-        <div className="container pt-5">
+        <div className="container pt-5 text-align-center">
             <div className="row mt-5">
-                <Link to="/admin/new-article" style={{height: '100px'}}className="col-3 bg-dark m-2">Redactar noticia</Link>
-                <Link to="/admin/select-article" style={{height: '100px'}} className="col-3 bg-light m-2">Modificar noticia</Link>
+                <Link to="/admin/" exact
+                style={{height: '100px', textDecoration: 'none', color: 'white'}}
+                className="col-2 bg-dark m-2 rounded">Inicio</Link>
+                <Link to="/admin/new-article"
+                style={{height: '100px', textDecoration: 'none', color: 'white'}}
+                className="col-4 bg-dark m-2 rounded">Redactar artículo</Link>
+                <Link to="/admin/select-article"
+                style={{height: '100px', textDecoration: 'none', color: 'white'}}
+                className="col-4 bg-dark m-2 rounded">Modificar/eliminar artículo</Link>
             </div>
             <Switch>
                 <Route path="/admin/modify-article">

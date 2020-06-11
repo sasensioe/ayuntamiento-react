@@ -2,8 +2,8 @@ import React from 'react'
 
 const Actions = () => {
     return (
-        <div className="container">
-            Elige una acción
+        <div className="container text-center">
+            <h1 className="mt-5">Elige una acción</h1>
         </div>
     )
 }
