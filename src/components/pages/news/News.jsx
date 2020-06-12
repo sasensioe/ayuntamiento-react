@@ -20,7 +20,6 @@ const News = () => {
 
   }, [dispatch])
 
-
     return (
         <div>
           <NewsGrid articles={articles} />

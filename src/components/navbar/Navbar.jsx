@@ -2,59 +2,63 @@ import React from 'react'
 
 import '../styles/navbar.css'
 
-import { Link, withRouter } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
 import DropdownMenu from './navbarFragments/DropdownMenu'
 
-
-const Navbar = () => {
+const Navbar = (props) => {
 
     const [menu, setMenu] = React.useState(false)
 
     const toggle = <FontAwesomeIcon icon={menu ? (faTimes) : (faBars)} />
 
+    const pushTo = (link) => {
+        setMenu(false)
+        props.history.push(link)
+    } 
+
     return (
         <nav className="navigation-bar">
 
-            <Link className="nav-brand ml-3" to="/" onClick={menu && (() =>setMenu(false))}>
+            <div className="nav-brand ml-3" to="/" onClick={() => pushTo('/')}>
                 <img src="https://firebasestorage.googleapis.com/v0/b/ayuntamiento-2a2a8.appspot.com/o/logo_blanco.png?alt=media&token=844bcfa7-38f1-43ae-882b-885d35fb223b" width="120px" alt="Ayuntamiento de Navalvillar de Pela"/>
-            </Link> 
+            </div> 
 
-                    <span style={{color: menu ? '#0b4f1d' : 'white'}} id="navbar-btn" onClick={() => setMenu(!menu)}>{toggle}</span>
+            <span id="navbar-toggle" style={{color: menu ? '#0b4f1d' : 'white'}} onClick={() => setMenu(!menu)}>{toggle}</span>
 
-                    <div id="nav-menu-container" className={menu ? "nav-menu-container-closed" : "nav-menu-container-opened"}>
-                        <ul className="nav-menu-links">
-                            <Link className="nav-menu-link" to="/" onClick={menu && (()=>setMenu(false))}>
-                                INICIO
-                            </Link>
+            <div id="nav-menu-container" className={menu ? "nav-menu-container-closed" : "nav-menu-container-opened"}>
+                <ul className="nav-menu-links">
+                    <li className="nav-menu-link" to="/" onClick={() => pushTo('/')}>
+                        INICIO
+                    </li>
 
-                            <Link className="nav-menu-link" to="" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                ÁREAS
-                            </Link>
+                    <li className="nav-menu-link" to="" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ÁREAS
+                    </li>
         
-                            <DropdownMenu />
-        
-                            <div className="areas-lateral-menu">
-                                <h4 id="areas-lateral-menu-title">ÁREAS</h4>
-                                <Link to="/areas/deporte" className="area-item" onClick={menu && (()=>setMenu(false))}>DEPORTE</Link>
-                                <Link to="/areas/cultura" className="area-item" onClick={menu && (()=>setMenu(false))}>CULTURA</Link>
-                                <Link to="/areas/juventud" className="area-item" onClick={menu && (()=>setMenu(false))}>JUVENTUD</Link>
-                                <Link to="/areas/empleo" className="area-item" onClick={menu && (()=>setMenu(false))}>EMPLEO</Link>
-                            </div>
-        
-                            <Link className="nav-menu-link" to="/news" onClick={menu && (()=>setMenu(false))}>
-                                NOTICIAS
-                            </Link>
-                            
-                            <Link className="nav-menu-link" to="/contact" onClick={menu && (()=>setMenu(false))}>
-                                CONTACTO
-                            </Link>
-                        </ul>
+                    <DropdownMenu />
+
+                    <div className="areas-lateral-menu">
+                        <h4 id="areas-lateral-menu-title">ÁREAS</h4>
+                        <li to="/areas/deporte" className="area-item" onClick={() => pushTo('/areas/deporte')}>DEPORTE</li>
+                        <li to="/areas/cultura" className="area-item" onClick={() => pushTo('/areas/cultura')}>CULTURA</li>
+                        <li to="/areas/juventud" className="area-item" onClick={() => pushTo('/areas/juventud')}>JUVENTUD</li>
+                        <li to="/areas/empleo" className="area-item" onClick={() => pushTo('/areas/empleo')}>EMPLEO</li>
                     </div>
 
+                    <li className="nav-menu-link" to="/news" onClick={() => pushTo('/news')}>
+                        NOTICIAS
+                    </li>
+        
+                    <li className="nav-menu-link" to="/contact" onClick={() => pushTo('/contact')}>
+                        CONTACTO
+                    </li>
+                </ul>
+            </div>
         </nav>
     )
 }

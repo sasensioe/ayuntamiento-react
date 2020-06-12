@@ -5,7 +5,7 @@
         /** ARTICLE CONTENT **/
 
 
-.article-body{
+#article-body{
     position: relative;
     float: left;
     text-align: center;
@@ -36,11 +36,11 @@
     text-align: center;
 }
                 
-#article-title h2{
+#article-title #title{
     font-size: 1.875em;
 }
                 
-#article-title h5{
+#article-title #description{
     font-size: 1em;
     padding-bottom: 1.25em;
 }
@@ -58,7 +58,7 @@
     font-size: 1.065;
 }
   
-.actions{
+#actions{
     position: relative;
     text-align: left;
 }

@@ -5,7 +5,6 @@ import 'moment/locale/es'
 
 const ArticleContent = (props) => {
 
-
     const article = props.article.current
 
 
@@ -14,13 +13,13 @@ const ArticleContent = (props) => {
             
             {
                 article.map(item => (
-                    <article key={item.id} className = "article-body container-fluid col-lg-9 col-md-12 col-sm-12">
+                    <article key={item.id} id="article-body" className = "container-fluid col-lg-9 col-md-12 col-sm-12">
                         <div id = "article-image">
                             <img src ={item.mainPic} alt=""/>
                         </div>
                         <div id = "article-title">
-                            <h2>{item.title}</h2>
-                            <h5>{item.description}</h5>
+                            <h2 id="title">{item.title}</h2>
+                            <h5 id="description">{item.description}</h5>
                             <hr/>
                         </div>  
                         <div id = "article-content">
@@ -28,7 +27,7 @@ const ArticleContent = (props) => {
                             <p>{item.p2}</p>
                             <p>{item.p3}</p>
                             <p>{item.p4}</p>
-                            <div className = "actions">
+                            <div id = "actions">
                                 <span id = "date">{moment(item.date).format('LL')}</span>
                             </div>
                         </div>

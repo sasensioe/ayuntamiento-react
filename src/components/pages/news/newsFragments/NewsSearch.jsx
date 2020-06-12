@@ -8,7 +8,7 @@ import 'moment/locale/es'
 import { useDispatch, useSelector } from 'react-redux'
 import { getNextFiveArticles, getAllArticles, getPreviousFiveArticles } from '../../../redux/articlesDucks'
 
-const NewsSearch = (props) => {
+const NewsSearch = () => {
     
     const [search, setSearch] = React.useState('')
     const [show, setShow] = React.useState([])
@@ -47,7 +47,7 @@ const NewsSearch = (props) => {
 
     return (
         <Fragment>
-            <section className="container mt-4">
+            <section className="news-search container mt-4">
                 <h3 className="news-search-title text-center">BUSCADOR DE NOTICIAS</h3>
                 <hr/>
                 <input
@@ -58,6 +58,7 @@ const NewsSearch = (props) => {
                 className="col-8 form-control m-auto"
                 placeholder="Buscar noticia"
                 />
+
                 <div className="search-news-container mt-4">
                     
                 {
@@ -75,6 +76,7 @@ const NewsSearch = (props) => {
                 }
 
                 </div>
+
                 <div className="text-center mt-2">
                     <button
                     className="btn btn-dark mr-2"
@@ -85,6 +87,7 @@ const NewsSearch = (props) => {
                     onClick={() => getNextArticles()}
                     >Siguiente</button>
                 </div>
+                
             </section>
         </Fragment>
     )

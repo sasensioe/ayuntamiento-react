@@ -18,12 +18,16 @@
     z-index: 9999;
 }
 
-.nav-menu-links{
+.navigation-bar .nav-brand{
+    cursor: pointer;
+}
+
+.navigation-bar #nav-menu-container .nav-menu-links{
     list-style: none;
     color: white;
 }
   
-.nav-menu-link{
+.navigation-bar #nav-menu-container .nav-menu-links .nav-menu-link{
     text-decoration: none;
     color: white;
     position: relative;
@@ -31,20 +35,20 @@
     margin: 1em;
 }
   
-.nav-menu-link:hover{
+.navigation-bar #nav-menu-container .nav-menu-links .nav-menu-link:hover{
     cursor: pointer;
     text-decoration: none;
     color: white;
 }
-  
-  
+
+
         /** LATERAL MENU **/
 
-#navbar-btn{
+#navbar-toggle{
     display: none;
 }
 
-.areas-lateral-menu{
+.navigation-bar #nav-menu-container .nav-menu-links .areas-lateral-menu{
     display: none;
 }
 
@@ -63,7 +67,7 @@
 
         /** LATERAL MENU **/
 
-#navbar-btn{
+#navbar-toggle{
     display: block;
     position: absolute;
     right: 30px;
@@ -85,29 +89,29 @@
     transition: 0.7s;
 }
 
-.nav-menu-container-closed{
+.navigation-bar .nav-menu-container-closed{
     right: 0%;
 }
-.nav-menu-container-opened{
+.navigation-bar .nav-menu-container-opened{
     right: -100%;
 }
 
-.nav-menu-links{
+.navigation-bar #nav-menu-container .nav-menu-links{
     display: flex;
     flex-direction: column;
 }
 
-.nav-menu-link{
+.navigation-bar #nav-menu-container .nav-menu-links .nav-menu-link{
     font-size: 2em;
     margin: auto;
     color: #0b4f1d;
 }
 
-.nav-menu-link:hover{
+.navigation-bar #nav-menu-container .nav-menu-links .nav-menu-link:hover{
     color: #0b4f1d;
 }
 
-.areas-lateral-menu{
+.navigation-bar #nav-menu-container .nav-menu-links .areas-lateral-menu{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -118,13 +122,14 @@
     color: #0b4f1d;
 }
 
-.area-item{
+.navigation-bar #nav-menu-container .nav-menu-links .areas-lateral-menu .area-item{
     margin: auto;
     text-decoration: none;
     color: #0b4f1d;
+    cursor: pointer;
 }
     
-.area-item:hover{
+.navigation-bar #nav-menu-container .nav-menu-links .areas-lateral-menu .area-item:hover{
     text-decoration: none;
     color: #0b4f1d;
 }

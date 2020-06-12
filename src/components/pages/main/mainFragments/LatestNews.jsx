@@ -1,11 +1,12 @@
 import React, {Fragment} from 'react'
-import {Link} from 'react-router-dom'
+
+import { Link } from 'react-router-dom'
+
+import { useDispatch, useSelector } from 'react-redux'
+import { getSixLatestArticles } from '../../../redux/articlesDucks'
 
 import moment from 'moment'
 import 'moment/locale/es'
-
-import {useDispatch, useSelector} from 'react-redux'
-import { getSixLatestArticles } from '../../../redux/articlesDucks'
 
 const LatestNews = () => {
 
@@ -16,7 +17,6 @@ const LatestNews = () => {
     React.useEffect(() => {
         dispatch(getSixLatestArticles())
     },[dispatch])
-
 
 
     return (

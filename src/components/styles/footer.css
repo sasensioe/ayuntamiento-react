@@ -9,16 +9,16 @@
   color: white;
 }
   
-.footer-middle img{
+.footer .footer-middle img{
   width: 100%;
 }
 
-.link-share{
+.footer .footer-left-side .link-share{
   text-decoration: none;
   color: white;
 }
 
-.link-share:hover{
+.footer .footer-left-side .link-share:hover{
   text-decoration: none;
   color: white;
 }
@@ -30,7 +30,7 @@
 @media only screen and (max-width: 992px){
   
   
-.footer-middle{
+.footer .footer-middle{
   display: none;
 }
 
@@ -41,7 +41,7 @@
   
 @media only screen and (max-width: 768px){
 
-.footer-middle{
+.footer .footer-middle{
   display: none;
 }
   

@@ -13,11 +13,11 @@
 
         /** AREAS **/
 
-.area{
+.areas-container .areas-content .row .area{
     height: 120px;
 }
 
-.card-area{
+.areas-container .areas-content .row .area .card-area{
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -31,7 +31,7 @@
     background-color: #0b4f1d;
 }
 
-.card-area:hover{
+.areas-container .areas-content .row .area .card-area:hover{
     text-decoration: none;
     color: white;
     transform: scale(1.02);
@@ -41,22 +41,23 @@
 
         /** CARD-NEWS **/
 
-.card{
+
+.latest-news .latest-news-content .row .card-news:hover{
+    transform: scale(1.02);
+    transition: 0.6s;
+}
+        
+.latest-news .latest-news-content .row .card-news .card{
     text-decoration: none;
     color: black;
 }
 
-.card-news:hover{
-    transform: scale(1.02);
-    transition: 0.6s;
-}
-
-.card-img-container{
+.latest-news .latest-news-content .row .card-news .card .card-img-container{
     height: 200px;
 }
 
 @supports(object-fit: cover){
-    .card-img{
+    .latest-news .latest-news-content .row .card-news .card .card-img-container .card-img{
         height: 100%;
         object-fit: cover;
         object-position: center;
@@ -74,7 +75,7 @@
     cursor: pointer;
 }
 
-.relevant-link:hover{
+.relevant-links .row .relevant-link:hover{
     transform: scale(1.02);
     transition: 0.6s;
 }
@@ -112,7 +113,7 @@
 
         /** AREAS **/
 
-.area{
+.areas-container .areas-content .row .area{
     margin-bottom: 0.8em;
     object-fit: cover;
     object-position: center;
@@ -128,5 +129,3 @@
 
 
 }
-
-

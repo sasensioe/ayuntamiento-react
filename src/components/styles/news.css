@@ -9,7 +9,7 @@
     margin-top: 5em;
 }
           
-.latest-news-grid-content {
+.latest-news-grid .latest-news-grid-content {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 10em 10em;
@@ -18,31 +18,31 @@
     padding: 1em;
 }
 
-.latest-news-grid-content article{
+.latest-news-grid .latest-news-grid-content .grid-article{
     position: relative;
     overflow: hidden;
     cursor: pointer;
 }
 
-.latest-news-grid-content article:hover{
+.latest-news-grid .latest-news-grid-content .grid-article:hover{
     transform: scale(1.02);
     transition: 0.6s;
 }
           
-.latest-news-grid-content article img{
+.latest-news-grid .latest-news-grid-content .grid-article img{
     height: 100%;
 }
           
-.latest-news-grid-content article:first-child {
+.latest-news-grid .latest-news-grid-content .grid-article:first-child {
     grid-row-start: 1;
     grid-row-end: 3;
 }
 
-.latest-news-grid-content article:first-child .deg-article {
+.latest-news-grid .latest-news-grid-content .grid-article:first-child .deg-article {
     font-size: 20px;
 }
 
-.deg-article{
+.latest-news-grid .latest-news-grid-content .deg-article{
     position: absolute;
     background-color: rgba(0,0,0,0.5);
     bottom: 0;
@@ -84,7 +84,7 @@
 
         /** NEWS GRID **/
 
-.latest-news-grid-content {
+.latest-news-grid .latest-news-grid-content{
     margin: auto;
     text-align: center;
     justify-items: center;
@@ -94,14 +94,14 @@
     flex-wrap: wrap;
 }
 
-.latest-news-grid-content article{
+.latest-news-grid .latest-news-grid-content .grid-article{
     width: 45%;
     margin-bottom: 2em;
     margin: 1em;
     font-size: 0.8em;
 }
 
-.latest-news-grid-content article img{
+.latest-news-grid .latest-news-grid-content .grid-article img{
     height: 100%;
 }
    
@@ -109,10 +109,6 @@
 #a1{
     width: 100%;
     font-size: 1em;
-}
-
-.news {
-    display: block;
 }
 
 }
@@ -133,7 +129,7 @@
 
         /** NEWS SEARCH **/
         
-.news-search-title{
+.news-search .news-search-title{
     margin-top: 3em;
 }
 }

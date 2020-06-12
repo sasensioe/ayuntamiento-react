@@ -1,8 +1,10 @@
 import React, {Fragment} from 'react'
+
 import { Link } from 'react-router-dom'
 
 
 const Areas = () => {
+
     return (
         <Fragment>
             <section className="areas-container container mt-5">
