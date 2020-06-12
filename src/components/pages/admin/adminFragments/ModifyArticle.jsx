@@ -13,9 +13,6 @@ const ModifyArticle = () => {
     const [p3, setP3] = React.useState('')
     const [p4, setP4] = React.useState('')
 
-
-
-
     const location = useLocation().pathname.split('/')
 
     const id = location[location.length-1]
@@ -53,11 +50,9 @@ const ModifyArticle = () => {
         }
     }
 
-
-
     return (
-        <div>
-            <h2>Modificar noticia</h2>
+        <div className="container mt-5">
+            <h2>Modificar artículo</h2>
             <form onSubmit={updateArticle}>
                 <label htmlFor="ID">ID</label><br/>
                 <input
@@ -65,7 +60,7 @@ const ModifyArticle = () => {
                 type="text"
                 value={id}
                 disabled
-                />Esta será la ruta que se mostrará en el navegador. Ej. cartel-dia-mujer<br/>
+                />     Esta será la ruta que se mostrará en el navegador. Ej. ../cartel-dia-mujer<br/>
                 <label htmlFor="title">Título</label><br/>
                 <input 
                 className="w-75"

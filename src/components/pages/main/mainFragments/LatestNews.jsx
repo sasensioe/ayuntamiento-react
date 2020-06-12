@@ -1,6 +1,9 @@
 import React, {Fragment} from 'react'
 import {Link} from 'react-router-dom'
 
+import moment from 'moment'
+import 'moment/locale/es'
+
 import {useDispatch, useSelector} from 'react-redux'
 import { getSixLatestArticles } from '../../../redux/articlesDucks'
 
@@ -34,7 +37,7 @@ const LatestNews = () => {
                                     <div className="card-body">
                                         <p className="card-text">{item.title}</p>
                                         <div className="d-flex justify-content-between align-items-center">
-                                            <small className="text-muted">{item.date}</small>
+                                            <small className="text-muted">{moment(item.date).format('LL')}</small>
                                         </div>
                                     </div>
                                 </div>

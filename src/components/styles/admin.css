@@ -3,3 +3,21 @@
 .paragraph{
     height: 100px;
 }
+
+
+.col-center{
+    float: none;
+    margin: 0 auto;
+    height: 100px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.col-center:hover{
+    text-decoration: none;
+    color: white
+}

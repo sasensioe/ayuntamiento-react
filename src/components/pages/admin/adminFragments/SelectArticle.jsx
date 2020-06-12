@@ -2,16 +2,15 @@ import React from 'react'
 
 import {Link} from 'react-router-dom'
 
-import { db } from '../../../../firebase'
+import { db, storage } from '../../../../firebase'
 
-const SelectArticle = (props) => {
+const SelectArticle = () => {
 
     const [articles, setArticles] = React.useState([])
 
     const getArticles = async() => {
         try {
             const data = await db.collection('articles').orderBy('date', 'desc').get()
-            console.log(data)
             const arrayData = data.docs.map(doc => ({id: doc.id, ...doc.data()}))
             setArticles(arrayData)
         } catch (error) {
@@ -19,8 +18,10 @@ const SelectArticle = (props) => {
         }
     }
 
+
     const eraseArticle = async(id) => {
         await db.collection('articles').doc(id).delete()
+        storage.ref().child('articles').child(id).child(id).delete()
     }
 
     React.useEffect(() => {
@@ -29,7 +30,7 @@ const SelectArticle = (props) => {
 
 
     return (
-        <div className="container">
+        <div className="container mt-5">
             <h2>¿Qué desea hacer?</h2>
             <ul className="list-group">
 

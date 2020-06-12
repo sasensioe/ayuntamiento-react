@@ -13,6 +13,16 @@
   width: 100%;
 }
 
+.link-share{
+  text-decoration: none;
+  color: white;
+}
+
+.link-share:hover{
+  text-decoration: none;
+  color: white;
+}
+
 
                                     /** MEDIUM DEVICES (992px) **/
 

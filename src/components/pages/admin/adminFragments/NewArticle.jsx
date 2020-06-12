@@ -58,7 +58,7 @@ const NewArticle = (props) => {
 
 
     return (
-        <div>
+        <div className="container mt-5">
             <h2>Nueva noticia</h2>
             <form onSubmit={procesar}>
                 <label htmlFor="ID">ID</label><br/>
@@ -66,10 +66,10 @@ const NewArticle = (props) => {
                 id="ID"
                 type="text"
                 onChange={(e) => setId(e.target.value)}
-                />Esta será la ruta que se mostrará en el navegador. Ej. cartel-dia-mujer<br/>
+                />     Esta será la ruta que se mostrará en el navegador. Ej. ../cartel-dia-mujer<br/>
                 <label htmlFor="title">Título</label><br/>
                 <input 
-                className="w-50"
+                className="w-75"
                 id="title"
                 type="text"
                 onChange={(e) => setTitle(e.target.value)}
@@ -113,7 +113,10 @@ const NewArticle = (props) => {
                 onChange={e => selectImage(e)}
                 disabled={id === ''}
                 /><br/>
-                <button className="btn btn-dark mt-4" type="submit">Publicar</button>
+                <button
+                className="btn btn-dark mt-4" type="submit"
+                disabled={id === '' || title === '' || description === '' || p1 === '' || img === ''}
+                >Publicar</button>
             </form>
         </div>
     )

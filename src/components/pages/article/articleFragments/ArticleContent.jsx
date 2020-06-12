@@ -1,5 +1,8 @@
 import React, {Fragment} from 'react'
 
+import moment from 'moment'
+import 'moment/locale/es'
+
 const ArticleContent = (props) => {
 
 
@@ -8,6 +11,7 @@ const ArticleContent = (props) => {
 
     return (
         <Fragment>
+            
             {
                 article.map(item => (
                     <article key={item.id} className = "article-body container-fluid col-lg-9 col-md-12 col-sm-12">
@@ -25,9 +29,7 @@ const ArticleContent = (props) => {
                             <p>{item.p3}</p>
                             <p>{item.p4}</p>
                             <div className = "actions">
-                                <span id = "likes">0 likes</span>
-                                <br/>
-                                <span id = "share">Compartir vía: </span>
+                                <span id = "date">{moment(item.date).format('LL')}</span>
                             </div>
                         </div>
                     </article>

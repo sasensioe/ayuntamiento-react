@@ -1,7 +1,9 @@
 import React from 'react'
 import {useParams} from 'react-router-dom'
+
 import ArticleContent from './articleFragments/ArticleContent'
 import RelatedNews from './articleFragments/RelatedNews'
+
 import '../../styles/article.css'
 
 import { useDispatch, useSelector } from 'react-redux'
