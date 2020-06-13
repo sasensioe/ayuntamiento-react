@@ -3,70 +3,70 @@
                                                 /** GENERAL **/
 
 
-            /** AREAS CONTENT **/                             
-
 #areas{
     margin: 0;
     margin-top: 60px;
 }
 
-.areas-menu{
+
+            /** AREAS MENU **/
+
+
+#areas-menu{
     height: 100vh;
     align-items: center;
 }
 
-#areas-menu-title{
+#areas-menu #areas-menu-title{
     text-align: center;
     margin-top: 2em;
     font-size: 2em;
 }
 
-#areas-menu-items{
-    padding: 0em;
+#areas-menu #areas-menu-items{
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    display: block;
-    margin: auto;
-}
-
-.areas-menu-item{
-    text-decoration: none;
+    padding: 2em;
     list-style: none;
-    font-size: 1.2em;
-    cursor: pointer;
-    margin: auto;
+}
+
+#areas-menu #areas-menu-items li{
     margin-top: 1em;
-    margin-bottom: 1em;
-    color: black;
 }
 
-.areas-menu-link{
-    color: black;
-}
-
-.areas-menu-link:hover{
-    color: black;
+#areas-menu #areas-menu-items .areas-menu-item{
     text-decoration: none;
+    font-size: 1.2em;
+    color: black;
 }
+
+
+            /** AREA CONTENT **/
+
 
 .area-content{
     margin-top: 2em;
     text-align: center;
 }
  
-.cards{
+.area-content .area-cards{
     padding: auto;
     justify-content: center;
+    margin: auto;
 }
 
-.card{
+.area-content .area-cards .area-card{
     margin: 1em;
     border: none;
     box-shadow:0px 4px 20px -2px black;
+    color: black;
 }
 
-.card:hover{
+.area-content .area-cards .area-card:hover{
     text-decoration: none;
-    color: black;
+    transform: scale(1.01);
+    transition: 0.5s;
 }
 
 .card-img-container{
@@ -75,48 +75,13 @@
 
 @supports(object-fit: cover){
     .card-img{
+        border-radius: 0;
         height: 100%;
         object-fit: cover;
         object-position: center;
     }
 }
 
-.details-container{
-    padding: 2em;
-    text-align: justify;
-}
-
-.details-img{
-    height: 230px;
-    text-align: center;
-}
-
-@supports(object-fit: cover){
-    .details-img img{
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
-}
-
-
-.obando-details-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.young-center-details-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.popular-details-container{
-    padding: 2em;
-    text-align: justify;
-    display: block;
-}
 
 
                                         /** MEDIUM DEVICES (992px) **/
@@ -129,14 +94,12 @@
 
 
 
-
-
                                         /** SMALL DEVICES (768px) **/
 
 @media only screen and (max-width: 768px){
 
 
-    .areas-menu{
+    #areas-menu{
         display: none;
     }
 
@@ -144,7 +107,9 @@
         font-size: 1em;
     }
 
-
+    .details-title{
+        font-size: 2em;
+    }
 
 
 

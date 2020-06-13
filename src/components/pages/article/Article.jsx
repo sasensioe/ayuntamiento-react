@@ -20,14 +20,13 @@ const Article = () => {
 
 
     React.useEffect(() => {
-
         dispatch(getAllArticles())
         window.scrollTo(0, 0)
-
+        document.title='Artículo'
     }, [dispatch])
 
     filtered.current = articles.filter(article => article.id.indexOf(id) !== -1)
-
+    
     
     return (
         <div className="container-fluid m-0 row">

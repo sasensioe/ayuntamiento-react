@@ -1,0 +1,28 @@
+
+                                        /** EUROPEAN YOUTH CARD **/
+
+#youth-card-details{
+    padding: 2em;
+}
+
+#youth-card-details-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+#youth-card-details #youth-card-details-content #youth-card-details-img{
+    height: 230px;
+    text-align: center;
+    margin-bottom: 2em;
+    padding: 0;
+}
+
+@supports(object-fit: cover){
+    #youth-card-details #youth-card-details-content #youth-card-details-img img{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}

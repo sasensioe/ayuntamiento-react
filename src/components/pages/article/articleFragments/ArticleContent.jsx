@@ -20,7 +20,7 @@ const ArticleContent = (props) => {
                         <div id = "article-title">
                             <h2 id="title">{item.title}</h2>
                             <h5 id="description">{item.description}</h5>
-                            <hr/>
+                            <hr noshade="noshade" className="w-75"/>
                         </div>  
                         <div id = "article-content">
                             <p>{item.p1}</p>

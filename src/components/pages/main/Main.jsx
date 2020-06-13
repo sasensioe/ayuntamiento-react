@@ -8,6 +8,11 @@ import Areas from './mainFragments/Areas'
 import Links from './mainFragments/Links'
 
 const Main = () => {
+
+  React.useEffect(() => {
+    document.title='Inicio'
+  }, [])
+
     
     return (
       <div>

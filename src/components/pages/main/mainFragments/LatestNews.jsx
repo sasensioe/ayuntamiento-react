@@ -23,7 +23,7 @@ const LatestNews = () => {
         <Fragment>
             <section className="latest-news container mt-5">
                 <h1 className="latest-news-title text-center">ÚLTIMAS NOTICIAS</h1>
-                <hr/>
+                <hr noshade="noshade" className="w-50"/>
                 <div className="latest-news-content album py-5">
                     <div className="row">
                         {

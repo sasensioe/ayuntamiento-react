@@ -19,7 +19,8 @@ const Navbar = (props) => {
     const pushTo = (link) => {
         setMenu(false)
         props.history.push(link)
-    } 
+    }
+
 
     return (
         <nav className="navigation-bar">

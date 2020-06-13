@@ -1,15 +1,23 @@
 import React from 'react'
 
+import '../../../../../styles/areas/culture/popularUniversity.css'
+
 const PopularUniversity = () => {
+
+    React.useEffect(() => {
+        window.scrollTo(0, 0)
+        document.title='Universidad Popular'
+    }, [])
+
     return (
-        <section className="area-detail-content container-fluid col-lg-9 col-md-9 col-sm-12">   
-            <h1 className="area-detail-content-title mt-3">Universidad Popular</h1>
+        <section id="popular-details" className="container-fluid col-lg-9 col-md-9 col-sm-12">   
+            <h1 className="details-title mt-3">Universidad Popular</h1>
             <hr/>
-            <div className="popular-details-container p-1">
-                <div className="details-img col-lg-6 col-md-6 col-sm-12 float-left">
+            <div id="popular-details-content">
+                <div id="popular-details-img" className="col-lg-6 col-md-6 col-sm-12 float-right">
                     <img src="https://firebasestorage.googleapis.com/v0/b/ayuntamiento-2a2a8.appspot.com/o/areas%2Fcultura%2FUPP.jpg?alt=media&token=9f8b0997-66dc-4cc3-aca8-575ffb09f4fe" alt=""/>
                 </div>
-                <p className="text-align-justify mt-3">La Universidad Popular Peleña (U.P.P.) está ubicada en la Plaza de España, en el edificio anexo del Ayuntamiento, y&nbsp;fue creada el 29 de marzo de 1996 como un servicio del Ayuntamiento de Navalvillar de Pela dependiente de la Concejalía de Cultura. Desde entonces, tal y como figura en las Bases Conceptuales de la Federación Española de Universidades Populares (F.E.U.P.), a la que pertenece, <strong>Proyecto de desarrollo cultural…</strong> y como “proyecto de desarrollo cultural que actúa en el municipio” su objetivo es promover la participación social, la educación, la formación y la cultura, para mejorar la calidad de vida de las personas y de la comunidad.</p>
+                <p className="mt-3">La Universidad Popular Peleña (U.P.P.) está ubicada en la Plaza de España, en el edificio anexo del Ayuntamiento, y&nbsp;fue creada el 29 de marzo de 1996 como un servicio del Ayuntamiento de Navalvillar de Pela dependiente de la Concejalía de Cultura. Desde entonces, tal y como figura en las Bases Conceptuales de la Federación Española de Universidades Populares (F.E.U.P.), a la que pertenece, <strong>Proyecto de desarrollo cultural…</strong> y como “proyecto de desarrollo cultural que actúa en el municipio” su objetivo es promover la participación social, la educación, la formación y la cultura, para mejorar la calidad de vida de las personas y de la comunidad.</p>
                 <p>Su objetivo es promover la participación social, la educación, la formación y la cultura, para mejorar la calidad de vida de las personas y de la comunidad.</p>
                 <span>Queremos:</span>
                 <ul>

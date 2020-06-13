@@ -9,7 +9,7 @@ const Areas = () => {
         <Fragment>
             <section className="areas-container container mt-5">
                 <h1 className="areas-title text-center">ÁREAS</h1>
-                <hr/>
+                <hr noshade="noshade" className="w-75"/>
                 <div className="areas-content album">
                     <div className="row">
                         <div className="area col-lg-3 col-md-6 col-sm-12">

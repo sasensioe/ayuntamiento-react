@@ -1,8 +1,8 @@
 import React from 'react'
 
-import { Switch, Route } from 'react-router-dom'
-
 import '../../styles/areas.css'
+
+import { Switch, Route } from 'react-router-dom'
 
 import AreasMenu from './areasFragments/AreasMenu'
 
@@ -13,7 +13,7 @@ import Culture from './areasFragments/culture/Culture'
 
 // Culture
 
-import NavalvillarLibrary from './areasFragments/culture/cultureElements/NavalvillarLibrary'
+import CultureHouse from './areasFragments/culture/cultureElements/CultureHouse'
 import ObandoLibrary from './areasFragments/culture/cultureElements/ObandoLibrary'
 import PopularUniversity from './areasFragments/culture/cultureElements/PopularUniversity'
 
@@ -36,7 +36,7 @@ const Areas = () => {
         window.scrollTo(0, 0)
     }, [])
 
-    
+
     return (
         <div id="areas" className="container-fluid row p-0">
             
@@ -49,7 +49,8 @@ const Areas = () => {
                 <Route path="/areas/juventud" exact component={Youth}/>
                 <Route path="/areas/cultura" exact component={Culture}/>
 
-                <Route path="/areas/cultura/biblioteca-navalvillar" component={NavalvillarLibrary}/>
+
+                <Route path="/areas/cultura/casa-cultura" component={CultureHouse}/>
                 <Route path="/areas/cultura/agencia-lectura-obando" component={ObandoLibrary}/>
                 <Route path="/areas/cultura/universidad-popular" component={PopularUniversity}/>
 
@@ -60,6 +61,7 @@ const Areas = () => {
                 <Route path="/areas/juventud/centro-joven" component={YoungCenter}/>
                 <Route path="/areas/juventud/carnet-joven-europeo" component={EuropeanYouthCard}/>
             </Switch>
+            
         </div>
     )
 }

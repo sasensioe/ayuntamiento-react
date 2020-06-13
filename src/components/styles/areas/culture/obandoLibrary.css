@@ -1,0 +1,25 @@
+
+                                        /** OBANDO LIBRARY **/
+
+#obando-library-details{
+    padding: 2em;
+}
+
+#obando-library-details-content{
+    text-align: justify;
+}
+
+#obando-library-details #obando-library-details-content #obando-library-details-img{
+    margin-bottom: 2em;
+    height: 200px;
+    text-align: center;
+    padding: 0;
+}
+
+@supports(object-fit: cover){
+    #obando-library-details #obando-library-details-content #obando-library-details-img img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}

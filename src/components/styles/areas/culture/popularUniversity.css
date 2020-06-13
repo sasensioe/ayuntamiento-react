@@ -1,0 +1,23 @@
+
+                                        /** POPULAR UNIVERSITY **/
+
+            /** GENERAL **/
+
+
+#popular-details{
+    padding: 2em;
+    text-align: justify;
+}
+
+#popular-details-img{
+    margin-bottom: 2em;
+}
+
+
+@supports(object-fit: cover){
+    #popular-details-img img{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}

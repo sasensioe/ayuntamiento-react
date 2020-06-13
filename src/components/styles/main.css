@@ -50,6 +50,9 @@
 .latest-news .latest-news-content .row .card-news .card{
     text-decoration: none;
     color: black;
+    border: none;
+    box-shadow:0px 4px 20px -2px black;
+    border-radius: 0;
 }
 
 .latest-news .latest-news-content .row .card-news .card .card-img-container{

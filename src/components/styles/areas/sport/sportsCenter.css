@@ -1,0 +1,22 @@
+
+                                            /** SPORTS CENTER **/
+
+
+#sports-center-details{
+    padding: 2em;
+    text-align: justify;
+}
+
+#sports-center-details #sports-center-details-img{
+    height: 230px;
+    text-align: center;
+    overflow: hidden;
+}
+
+@supports(object-fit: cover){
+    #sports-center-details #sports-center-details-img img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}

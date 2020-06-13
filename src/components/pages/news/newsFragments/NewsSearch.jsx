@@ -49,7 +49,6 @@ const NewsSearch = () => {
         <Fragment>
             <section className="news-search container mt-4">
                 <h3 className="news-search-title text-center">BUSCADOR DE NOTICIAS</h3>
-                <hr/>
                 <input
                 value={search}
                 onFocus={() => getAll()}

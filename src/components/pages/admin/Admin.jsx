@@ -17,6 +17,8 @@ const Admin = (props) => {
 
 
     React.useEffect(() => {
+        window.scrollTo(0, 0)
+        document.title='Admin'
         login()
     }, [])
 

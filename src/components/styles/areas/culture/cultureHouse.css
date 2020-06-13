@@ -1,0 +1,25 @@
+
+                                        /** CULTURE HOUSE **/
+
+#culture-house-details{
+    padding: 2em;
+}
+
+#culture-house-details-content{
+    text-align: justify;
+}
+
+#culture-house-details #culture-house-details-content #culture-house-details-img{
+    margin-bottom: 2em;
+    height: 200px;
+    text-align: center;
+    padding: 0;
+}
+
+@supports(object-fit: cover){
+    #culture-house-details #culture-house-details-content #culture-house-details-img img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}

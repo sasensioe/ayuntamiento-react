@@ -1,12 +1,20 @@
 import React from 'react'
 
+import '../../../../../styles/areas/culture/obandoLibrary.css'
+
 const ObandoLibrary = () => {
+    
+    React.useEffect(() => {
+        window.scrollTo(0, 0)
+        document.title='Agencia de Lectura de Obando'
+    }, [])
+    
     return (
-        <section className="area-detail-content container-fluid col-lg-9 col-md-9 col-sm-12">   
-            <h1 className="area-detail-content-title mt-3">Agencia de Lectura de Obando</h1>
+        <section id="obando-library-details" className="container-fluid col-lg-9 col-md-9 col-sm-12">
+            <h1 className="details-title mt-3">Agencia de Lectura de Obando</h1>
             <hr/>
-            <div className="obando-details-container">
-                <div className="details-img col-lg-6 col-md-6 col-sm-12 mb-3">
+            <div id="obando-library-details-content">
+                <div id="obando-library-details-img" className="col-12">
                     <img src="https://firebasestorage.googleapis.com/v0/b/ayuntamiento-2a2a8.appspot.com/o/areas%2Fcultura%2Fbiblioteca-obando.jpg?alt=media&token=b5410130-ca14-4811-9c2e-b3668feb5d92" alt=""/>
                 </div>
                 <p className="text-align-justify"><strong>La Agencia de Lectura de Obando abre sus puertas de lunes a viernes en horario de 16:30 a 20:00 horas.</strong></p>

@@ -3,21 +3,21 @@
 
 
 
-.contact-content{
+.contact{
     margin-top: 80px;
     text-align: center;
 }
 
-.contact-body{
+.contact .contact-body{
     box-shadow:0px 4px 20px -2px black;
 }
 
-.contact-input{
+.contact .contact-body .contact-form .contact-input{
     border: none;
     border-bottom: 1px solid #0b4f1d;
 }
 
-.contact-input:focus{
+.contact .contact-body .contact-form .contact-input:focus{
     outline:none !important;
     outline-width: 0 !important;
     box-shadow: none;
