@@ -9,7 +9,7 @@ const NewsGrid = (props) => {
 
     return (
         <Fragment>
-            <section className="latest-news-grid container">
+            <section className="latest-news-grid container animated fadeIn fast">
                 <h1>ÚLTIMAS NOTICIAS</h1>
                 <div className="latest-news-grid-content">
                     {

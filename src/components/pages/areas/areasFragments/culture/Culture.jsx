@@ -11,7 +11,7 @@ const Culture = () => {
     })
 
     return (
-        <section className="area-content container-fluid col-lg-9 col-md-9 col-sm-12">
+        <section className="area-content animated fadeIn fast container-fluid col-lg-9 col-md-9 col-sm-12">
             <h1 className="area-content-title">CULTURA</h1>
             <hr noshade="noshade" className="w-50"/>
             <div className="area-cards row p-3">

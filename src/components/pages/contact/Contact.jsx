@@ -11,7 +11,7 @@ const Contact = () => {
 
 
     return (
-        <section className="contact container col-10">
+        <section className="contact animated fadeIn fast container col-10">
             <h3 className="mb-4">CONTACTO</h3>
             <div className="contact-body row p-0">
                 <form className="contact-form col-lg-6 col-md-6 col-sm-12 p-0">

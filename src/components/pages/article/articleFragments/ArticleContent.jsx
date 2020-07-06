@@ -13,7 +13,7 @@ const ArticleContent = (props) => {
             
             {
                 article.map(item => (
-                    <article key={item.id} id="article-body" className = "container-fluid col-lg-9 col-md-12 col-sm-12">
+                    <article key={item.id} id="article-body" className = "container-fluid animated fadeIn fast col-lg-9 col-md-12 col-sm-12">
                         <div id = "article-image">
                             <img src ={item.mainPic} alt=""/>
                         </div>

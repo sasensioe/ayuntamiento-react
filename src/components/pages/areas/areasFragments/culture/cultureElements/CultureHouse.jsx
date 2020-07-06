@@ -15,7 +15,7 @@ const NavalvillarLibrary = () => {
             <hr/>
             <div id="culture-house-details-content">
                 <div id="culture-house-details-img" className="col-12">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/ayuntamiento-2a2a8.appspot.com/o/areas%2Fdeporte%2Fcampo-futbol.jpg?alt=media&token=073e0255-84de-4a79-af29-bdb80fa2fc1e" alt=""/>
+                    <img src="https://firebasestorage.googleapis.com/v0/b/ayuntamiento-2a2a8.appspot.com/o/areas%2Fcultura%2Fbiblioteca-navalvillar.jpg?alt=media&token=478e17a2-2ce9-41ab-a645-6ed839f7e14c" alt=""/>
                 </div>
                 <p className="text-align-justify">La Casa de Cultura pretende cubrir las necesidades para el desarrollo y manifestación cultural en toda su amplitud, que solicitan nuestros vecinos</p>
                 <p className="text-align-justify"><strong>Cuenta con 2 plantas distribuidas como sigue:</strong></p>

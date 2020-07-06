@@ -47,7 +47,7 @@ const NewsSearch = () => {
 
     return (
         <Fragment>
-            <section className="news-search container mt-4">
+            <section className="news-search container mt-4 animated fadeIn fast">
                 <h3 className="news-search-title text-center">BUSCADOR DE NOTICIAS</h3>
                 <input
                 value={search}

@@ -21,7 +21,7 @@ const SportsCenter = () => {
                     <p className="text-align-justify">El deporte es uno de los pilares de nuestra localidad. Desde el Ayuntamiento de la localidad se ha potenciado las instalaciones deportivas con el fin de crear un Complejo Deportivo Municipal de alto nivel.</p>
                     <p className="text-align-justify">El Ayuntamiento consiguió que resurgiera el Olympic C.F. y que devolviera la ilusión de aquellas tardes de antaño, cuando el pueblo se volcaba apoyando al equipo. Con el esfuerzo de técnicos y jugadores, consiguieron subir a la Liga Provincial.</p>
 
-                    <div className="mt-2 p-4">
+                    <div className="mt-2 p-1">
                         <h4>Campo de fútbol</h4>
                         <div className="col-12 row m-0">
                             <img className="item-img col-lg-4 col-md-4-col-sm-12 p-4" src="https://firebasestorage.googleapis.com/v0/b/ayuntamiento-2a2a8.appspot.com/o/areas%2Fdeporte%2Fcampo-futbol.jpg?alt=media&token=073e0255-84de-4a79-af29-bdb80fa2fc1e" alt=""/>
@@ -35,7 +35,7 @@ const SportsCenter = () => {
                         </div>
                     </div>
 
-                    <div className="mt-2 p-4">
+                    <div className="mt-2 p-1">
                         <h4>Gimnasio Municipal</h4>
                         <div className="col-12 row m-0">
                             <img className="item-img col-lg-4 col-md-4-col-sm-12 p-4" src="https://firebasestorage.googleapis.com/v0/b/ayuntamiento-2a2a8.appspot.com/o/areas%2Fdeporte%2Fgimnasio-1.jpg?alt=media&token=ea548d2e-0a01-40d4-ae96-be0e440eaf91" alt=""/>
@@ -48,7 +48,7 @@ const SportsCenter = () => {
                         </div>
                     </div>
 
-                    <div className="mt-2 p-4">
+                    <div className="mt-2 p-1">
                         <h4>Piscina Municipal</h4>
                         <div className="col-12 row m-0">
                             <img className="item-img col-lg-4 col-md-4-col-sm-12 p-4" src="https://firebasestorage.googleapis.com/v0/b/ayuntamiento-2a2a8.appspot.com/o/areas%2Fdeporte%2Fpiscina-1.jpg?alt=media&token=f2ce142b-2329-4592-b53b-946c5b857f18" alt=""/>
@@ -62,7 +62,7 @@ const SportsCenter = () => {
                         </div>
                     </div>
 
-                    <div className="mt-2 p-4">
+                    <div className="mt-2 p-1">
                         <h4>Pabellón Polideportivo "Pedro Luis Arroyo"</h4>
                         <div className="col-12 row m-0">
                             <img className="item-img col-lg-4 col-md-4-col-sm-12 p-4" src="https://firebasestorage.googleapis.com/v0/b/ayuntamiento-2a2a8.appspot.com/o/areas%2Fdeporte%2Fpabellon-1.jpeg?alt=media&token=0902f102-476f-474d-b530-d330704fd981" alt=""/>

@@ -71,6 +71,18 @@
     padding-top: 5em;
 }
 
+.card{
+    border: none;
+    box-shadow:0px 4px 20px -2px black;
+    border-radius: 0;
+    margin: auto;
+    cursor: pointer;
+}
+
+.card-img-top{
+    border-radius: 0;
+}
+
 
                                         /** SMALL DEVICE (768px) **/
 
