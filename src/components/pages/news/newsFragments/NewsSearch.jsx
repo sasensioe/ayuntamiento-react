@@ -62,7 +62,7 @@ const NewsSearch = () => {
                     
                 {
                     show.map((item) => (
-                        <Link key={item.id} to={`/articles/${item.id}`}className="card-news-search p-0 col-lg-10 col-md-12 col-sm-12 row">
+                        <Link key={item.id} to={`/articles/${item.id}`}className="card-news-search p-0 col-lg-10 col-md-12 col-sm-12 row animated fadeIn">
                             <img className="card-img p-0 col-lg-3 col-md-4 col-sm-12" src={item.mainPic} alt=""/>
                             <div className="card-news-body col-lg-9 col-md-8 col-sm-12">
                                 <p className="card-text">{item.title}</p>

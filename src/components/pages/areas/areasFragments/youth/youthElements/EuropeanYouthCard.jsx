@@ -10,7 +10,7 @@ const EuropeanYouthCard = () => {
     }, [])
 
     return (
-        <section id="youth-card-details" className="container-fluid col-lg-9 col-md-9 col-sm-12">   
+        <section id="youth-card-details" className="container-fluid col-lg-9 col-md-9 col-sm-12 animated fadeIn">   
             <h1 className="details-title mt-3">Carnet Joven Europeo</h1>
             <hr/>
             <div id="youth-card-details-content">

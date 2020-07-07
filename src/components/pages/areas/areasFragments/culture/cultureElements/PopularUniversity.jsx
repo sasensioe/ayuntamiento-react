@@ -10,7 +10,7 @@ const PopularUniversity = () => {
     }, [])
 
     return (
-        <section id="popular-details" className="container-fluid col-lg-9 col-md-9 col-sm-12">   
+        <section id="popular-details" className="container-fluid col-lg-9 col-md-9 col-sm-12 animated fadeIn">   
             <h1 className="details-title mt-3">Universidad Popular</h1>
             <hr/>
             <div id="popular-details-content">

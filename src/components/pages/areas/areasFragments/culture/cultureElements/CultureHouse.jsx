@@ -10,7 +10,7 @@ const NavalvillarLibrary = () => {
     }, [])
 
     return (
-        <section id="culture-house-details" className="container-fluid col-lg-9 col-md-9 col-sm-12">   
+        <section id="culture-house-details" className="container-fluid col-lg-9 col-md-9 col-sm-12 animated fadeIn">   
             <h1 className="details-title mt-3">Casa de la Cultura</h1>
             <hr/>
             <div id="culture-house-details-content">

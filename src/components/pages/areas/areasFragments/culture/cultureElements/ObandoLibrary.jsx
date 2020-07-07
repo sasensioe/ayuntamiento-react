@@ -10,7 +10,7 @@ const ObandoLibrary = () => {
     }, [])
     
     return (
-        <section id="obando-library-details" className="container-fluid col-lg-9 col-md-9 col-sm-12">
+        <section id="obando-library-details" className="container-fluid col-lg-9 col-md-9 col-sm-12 animated fadeIn">
             <h1 className="details-title mt-3">Agencia de Lectura de Obando</h1>
             <hr/>
             <div id="obando-library-details-content">

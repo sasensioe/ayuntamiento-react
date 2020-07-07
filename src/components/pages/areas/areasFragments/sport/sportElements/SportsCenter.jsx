@@ -10,7 +10,7 @@ const SportsCenter = () => {
     }, [])
 
     return (
-        <section id="sports-center-details" className="container-fluid col-lg-9 col-md-9 col-sm-12">
+        <section id="sports-center-details" className="container-fluid col-lg-9 col-md-9 col-sm-12 animated fadeIn">
             <div>
                 <h1 className="details-title mt-3">Complejo Polideportivo "La Dehesa"</h1>
                 <hr/>
