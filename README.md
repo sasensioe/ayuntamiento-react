@@ -95,4 +95,4 @@ link
 
 Screen captures:
 
-![alt text](/img/readme/pic1.jpg)
+![alt text](img/readme/pic1.jpg)
