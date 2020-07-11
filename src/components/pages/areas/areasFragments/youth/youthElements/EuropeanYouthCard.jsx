@@ -15,7 +15,7 @@ const EuropeanYouthCard = () => {
             <hr/>
             <div id="youth-card-details-content">
                 <div id="youth-card-details-img" className="col-lg-6 col-md-6 col-sm-12 mb-3">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/ayuntamiento-2a2a8.appspot.com/o/areas%2Fjuventud%2Fcarnet-joven.jpg?alt=media&token=497ce077-a4e6-4092-8ed3-4a9f1e415bb2" alt=""/>
+                    <img src="/img/areas/youth/european-youth-card/european-youth-card.jpg" alt=""/>
                 </div>
                 <p className="text-align-justify"><strong>El Carné Joven Europeo, te ofrece la oportunidad de poder disfrutar de descuentos, ofertas especiales y muchas ventajas en toda Europa.</strong></p>
                 <p>Si te gusta viajar encontrarás descuentos en hoteles, albergues, alojamientos rurales, agencias de viajes, alquiler de coches, transportes, etc.</p>

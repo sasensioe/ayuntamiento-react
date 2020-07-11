@@ -15,9 +15,9 @@ const EmploymentExchange = () => {
             <hr/>
             <div id="employment-details-content">
                 <div id="employment-details-img" className="col-lg-6 col-md-6 col-sm-12 float-right">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/ayuntamiento-2a2a8.appspot.com/o/areas%2Fempleo%2Fempleo.jpg?alt=media&token=2745b2a5-46af-4d4e-9a59-debe82d12868" alt=""/>
+                    <img src="/img/areas/job/employment-exchange/employment-exchange.jpg" alt=""/>
                 </div>
-                <p className="text-align-justify">La Agencia de Empleo y Desarrollo Local es un <strong>servicio público y gratuíto</strong> que se pone a disposición de la ciudadanía para potenciar el desarrollo socioeconómico y la generación de empleo en Navalvillar de Pela.</p>
+                <p className="text-align-justify">La Agencia de Empleo y Desarrollo Local es un <strong>servicio público y gratuíto</strong> que se pone a disposición de la ciudadanía para potenciar el desarrollo socioeconómico y la generación de empleo en Magnolia del Campo.</p>
                 <p>Desde su creación en el año 1996, su misión principal ha sido la de colaborar en la implantación de políticas activas de empleo orientadas a la <strong>generación y desarrollo de actividad económica</strong>. Conscientes de que las empresas son el motor de creación de riquezas y generación de empleo, los servicios que se prestan giran en torno a la figura del promotor y empresario:</p>
                 <span><strong>Lo que ofrecemos:</strong></span>
                 <ul>
