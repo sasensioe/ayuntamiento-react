@@ -40,7 +40,10 @@ const NewsSearch = () => {
     }
 
     const filter = () => {
-        filtered = articles.filter(article => article.title.toLocaleLowerCase().indexOf(search.toLocaleLowerCase()) !== -1)
+        let arrayFiltered = articles.filter(article => article.title.toLocaleLowerCase().indexOf(search.toLocaleLowerCase()) !== -1)
+
+        filtered = arrayFiltered.slice(0,5)
+
         setShow(filtered)
     }
     
