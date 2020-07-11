@@ -15,8 +15,8 @@ const Header = () => {
                     <div className="carousel-item active">
                         <img className="carousel-image d-block img-fluid" src="./img/slider/slide_1.jpg" alt="First slide"/>
                         <div className="carousel-caption d-none d-md-block">
-                            <h1>La Encamisá</h1>
-                            <p>El sentimiento peleño encarnado</p>
+                            <h1>Orgullo de ser Magnolino</h1>
+                            <p>Más que un pueblo, un sentimiento</p>
                         </div>
                     </div>
                     <div className="carousel-item">
