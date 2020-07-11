@@ -66,3 +66,33 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+<!-- Sergio -->
+
+AYUNTAMIENTO
+
+
+
+This is my first project as Web Developer, it shows the web page of the fictional town of
+'Magnolia del Campo'. The website is a responsive SPA, with a main page, four areas pages,
+a news page in which you can search articles and a contact page.
+I have used Bootstrap for making my site responsive and also Google Fonts for a better look.
+
+The main external resources and libraries used for his project are:
+
+-- Firebase ( Firestore, Storage, Authentication and Hosting )
+-- REDUX ('Ducks')
+-- Google Fonts( Raleway )
+-- Bootstrap
+-- MomentJS
+
+
+See the project running in the following link:
+
+link
+
+
+Screen captures:
+
+![alt text](/img/readme/pic1.jpg)
