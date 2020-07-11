@@ -2,9 +2,11 @@ import React from 'react'
 
 import { useLocation } from 'react-router-dom'
 
+import {withRouter} from 'react-router-dom'
+
 import { db } from '../../../../firebase'
 
-const ModifyArticle = () => {
+const ModifyArticle = (props) => {
 
     const [title, setTitle] = React.useState('')
     const [description, setDescription] = React.useState('')
@@ -45,6 +47,7 @@ const ModifyArticle = () => {
                 p3: p3,
                 p4: p4,
             })
+            props.history.push('/admin')
         } catch (error) {
             console.log(error)
         }
@@ -112,4 +115,4 @@ const ModifyArticle = () => {
     )
 }
 
-export default ModifyArticle
+export default withRouter(ModifyArticle)
