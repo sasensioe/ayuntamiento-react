@@ -26,7 +26,7 @@ const Navbar = (props) => {
         <nav className="navigation-bar">
 
             <div className="nav-brand ml-3" to="/" onClick={() => pushTo('/')}>
-                <img src="https://firebasestorage.googleapis.com/v0/b/ayuntamiento-2a2a8.appspot.com/o/logo_blanco.png?alt=media&token=844bcfa7-38f1-43ae-882b-885d35fb223b" width="120px" alt="Ayuntamiento de Navalvillar de Pela"/>
+                <img src="/img/logo/logo.png" width="120px" alt="Ayuntamiento de Magnolia del Campo"/>
             </div> 
 
             <span id="navbar-toggle" style={{color: menu ? '#0b4f1d' : 'white'}} onClick={() => setMenu(!menu)}>{toggle}</span>
